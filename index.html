@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Credit Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header container-fluid">
+      <div class="topContainer">
+        <div class="logoContainer">
+          <img src="./src/img/shop.png" class="logoIcon" alt="...">
+          <h1 class="header-title">Shopaholic</h1>
+        </div>
+        <div class="searchContainer">
+          <input type="text" class="searchBar" placeholder="   I'm looking for ...">
+          <button class="onSearch">
+            <img src="./src/img/search.png" class="searchIcon" alt="...">
+          </button>
+        </div>
+        <div class="iconsContainer">
+          <img src="./src/img/shopping-bag.png" class="shopIcon" alt="...">
+          <img src="./src/img/heart.png" class="heartIcon" alt="...">
+        </div>
+
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a class="item__hover">ADDRESS</a></li>
+          <li class="nav-list-item"><a class="is_focus">PAYMENT</a></li>
+          <li class="nav-list-item"><a class="item__hover">CONFIRM</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-main h-90">
+      <section class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide p-3"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./src/img/credit-card.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/credit-card.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/credit-card.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <div class="go_back">
+        <p>< Go back</p>
+      </div>
+<!-- Formulario -->
+<section class="cardInfoContainer">
+  <form class="form" action="">
+    <label class="paymentTitle">Payment details</label>
+    <div class="mb-3 w-100">
+      <label for="card-name" class="inputTitles">Name card</label>
+      <input
+        type="text"
+        class="form-control"
+        id="card-name"
+        placeholder="Grecia Flores"
+      />
+    </div>
+    <div class="mb-3 w-100">
+      <label for="card-number" class="inputTitles">Card number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="card-number"
+        placeholder="5579 3322 0662 2213"
+      />
+    </div>
+    <div class="formulario__flex">
+      <div class="mb-3 w-50">
+        <label for="valid-trough" class="inputTitles">Valid Trough</label>
+        <input
+          type="text"
+          class="form-control"
+          id="valid-trough"
+          placeholder="02/2025"
+        />
+      </div>
+      <div class="mb-3 w-50">
+        <label for="cvv" class="inputTitles">CVV</label>
+        <input
+          type="text"
+          class="form-control"
+          id="cvv"
+          placeholder="444"
+        />
+      </div>
+    </div>
+    <div class="saveCardContainer">
+      <label class="saveCardTitle">Save this card</label>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="button-groups">
+      <button type="button" class="btn btn-warning"><img src="./src/img/lock.png" class="lockIcon" alt="..."></img><strong>Pay</strong> $400.00</button>
+    </div>
+  </form>
+</section>
+</main>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>
+  
